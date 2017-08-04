@@ -12,5 +12,7 @@ namespace Tavisca.MobileInfoManager.Entity
         public string Manufacturer { get; set; }
         public double Price { get; set; }
         public string OwnerName { get; set; }
+        public Battery Battery { get; set; }
+        public Display Display { get; set; }
     }
 }

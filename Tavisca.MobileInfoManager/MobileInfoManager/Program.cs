@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tavisca.MobileInfoManager.Entity;
 
 namespace MobileInfoManager
 {
@@ -10,6 +11,7 @@ namespace MobileInfoManager
     {
         public static void Main(string[] args)
         {
+            MobileDevice mobileDevice = new MobileDevice();
         }
     }
 }

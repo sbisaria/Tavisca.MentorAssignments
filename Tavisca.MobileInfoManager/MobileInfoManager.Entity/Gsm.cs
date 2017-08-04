@@ -16,6 +16,5 @@ namespace Tavisca.MobileInfoManager.Entity
             Battery = battery;
             Display = display;
         }
-        
     }
 }
