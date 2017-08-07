@@ -8,7 +8,7 @@ namespace Tavisca.MobileInfoManager.Entity
 {
     public class BatteryCharacterstics
     {
-        public MobileDevice MobileDevice { get; set; }
+        public MobileDevice Model { get; set; }
         public double IdleHours { get; set; }
         public double TalkHours { get; set; }
     }
