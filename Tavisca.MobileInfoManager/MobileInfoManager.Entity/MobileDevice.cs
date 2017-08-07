@@ -22,5 +22,32 @@ namespace Tavisca.MobileInfoManager.Entity
         public string OwnerName { get; set; }
         public BatteryCharacterstics Battery { get; set; }
         public MobileDisplay DisplayCharacterstics { get; set; }
+
+        public MobileDevice(string model,string manufacturer)
+        {
+            Model = model;
+            Manufacturer = manufacturer;
+        }
+        public MobileDevice(string model, string manufacturer,double price) : this(model,manufacturer)
+        {
+            Price = price;
+        }
+
+        public MobileDevice(string model, string manufacturer, double price,string ownerName) : this(model, manufacturer,price,"",battery:null)
+        {
+            OwnerName = ownerName;
+        }
+
+        public MobileDevice(string model, string manufacturer, double price, string ownerName,BatteryCharacterstics battery) : this(model, manufacturer, price)
+        {
+            OwnerName = ownerName;
+            Battery = battery;
+        }
+
+        public MobileDevice(string model, string manufacturer, double price, string ownerName, MobileDisplay displayCharacterstics) : this(model, manufacturer, price)
+        {
+            OwnerName = ownerName;
+            DisplayCharacterstics = displayCharacterstics;
+        }
     }
 }
