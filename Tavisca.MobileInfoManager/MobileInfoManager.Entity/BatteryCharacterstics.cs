@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tavisca.MobileInfoManager.Entity
 {
-    public class Battery
+    public class BatteryCharacterstics
     {
         public double IdleHours { get; set; }
         public double TalkHours { get; set; }

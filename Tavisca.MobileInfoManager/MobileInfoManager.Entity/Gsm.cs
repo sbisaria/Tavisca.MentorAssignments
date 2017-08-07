@@ -8,13 +8,7 @@ namespace Tavisca.MobileInfoManager.Entity
 {
     public class Gsm
     {
-        public Battery Battery;
-        public Display Display;
-
-        public Gsm(Battery battery,Display display)
-        {
-            Battery = battery;
-            Display = display;
-        }
+        public BatteryCharacterstics Battery { get; set; }
+        public MobileDisplay Display { get; set; }
     }
 }

@@ -40,9 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Battery.cs" />
-    <Compile Include="Colours.cs" />
-    <Compile Include="Display.cs" />
+    <Compile Include="BatteryCharacterstics.cs" />
+    <Compile Include="MobileDisplay.cs" />
     <Compile Include="Gsm.cs" />
     <Compile Include="MobileDevice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

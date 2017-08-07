@@ -7,15 +7,9 @@ using System.Drawing;
 
 namespace Tavisca.MobileInfoManager.Entity
 {
-    public class MobileDisplayCharacterstic
+    public class MobileDisplay
     {
         public double Size { get; set; }
         public List<string> Colours { get; set; }
-
-        public MobileDisplayCharacterstic(double size,string colour)
-        {
-            size = Size;
-            colour = Colours;
-        }
     }
 }
