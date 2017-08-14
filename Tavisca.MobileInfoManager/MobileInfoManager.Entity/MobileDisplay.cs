@@ -9,7 +9,21 @@ namespace Tavisca.MobileInfoManager.Entity
 {
     public class MobileDisplay
     {
-        public double Size { get; set; }
+        public string Size { get; set; }
         public List<string> Colours { get; set; }
+
+        public MobileDisplay(string size, List<string> colours)
+        {
+            Size = size;
+            Colours = colours;
+        }
+        public override string ToString()
+        {
+            var str = new StringBuilder();
+            var size = $"Size : {Size}";
+            var colours = $"Colours available : {string.Join(",", Colours)}";
+            str.Append(size).Append("\n").Append(colours).Append("\n");
+            return str.ToString();
+        }
     }
 }

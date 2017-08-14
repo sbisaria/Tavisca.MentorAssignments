@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MobileInfoManager.Entity
+namespace Tavisca.MobileInfoManager.Entity
 {
-    public enum Importance
+    public enum BatteryType
     {
-
+        Li_Ion,
+        NiMH,
+        NiCd,
     }
 }

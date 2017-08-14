@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BatteryCharacterstics.cs" />
+    <Compile Include="BatteryType.cs" />
     <Compile Include="MobileDisplay.cs" />
     <Compile Include="Gsm.cs" />
     <Compile Include="MobileDevice.cs" />
