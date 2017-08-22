@@ -10,7 +10,7 @@ namespace Tavisca.MobileInfoManager.Tests
         [TestMethod]
         public void Test_constructor_with_four_parameters()
         {
-            var mobileDevice = new MobileDevice("", "", 0.0,"");
+            //var mobileDevice = new MobileDevice("", "", 0.0,"",);
         }
     }
 }

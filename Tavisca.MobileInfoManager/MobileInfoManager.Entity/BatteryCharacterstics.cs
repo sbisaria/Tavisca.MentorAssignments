@@ -12,13 +12,15 @@ namespace Tavisca.MobileInfoManager.Entity
         public double IdleHours { get; set; }
         public double TalkHours { get; set; }
         public string BatteryModel { get; set; }
+        public double PricePerCall = 60;
 
-        public BatteryCharacterstics(double idleHours, double talkHours, BatteryType batteryType, string batteryModel)
+        public BatteryCharacterstics(double idleHours, double talkHours, BatteryType batteryType, string batteryModel,double pricePerCall)
         {
             IdleHours = idleHours;
             TalkHours = talkHours;
             BatteryType = batteryType;
             BatteryModel = batteryModel;
+            PricePerCall = pricePerCall;
         }
         public override string ToString()
         {
@@ -26,9 +28,9 @@ namespace Tavisca.MobileInfoManager.Entity
             var idleHours = $"Idle hours : {IdleHours}";
             var talkHours = $"Idle hours : {TalkHours}";
             var batteryType = $"Battery Type : {BatteryType}";
-            str.Append(idleHours).Append("\n").Append(talkHours).Append("\n").Append(batteryType).Append("\n");
+            var batteryModel = $"Battery Model : {BatteryModel}";
+            str.Append(idleHours).Append("\n").Append(talkHours).Append("\n").Append(batteryType).Append("\n").Append(batteryModel);
             return str.ToString();
-
         }
     }
 

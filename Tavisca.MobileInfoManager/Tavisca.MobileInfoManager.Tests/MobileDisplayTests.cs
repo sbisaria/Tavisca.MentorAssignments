@@ -11,7 +11,7 @@ namespace Tavisca.MobileInfoManager.Tests
         [TestMethod]
         public void Test_constructor_with_two_parameters()
         {
-            var mobileDisplay = new MobileDisplay(0.0,new List<string>());
+            var mobileDisplay = new MobileDisplay("",new List<string>());
         }
     }
 }
